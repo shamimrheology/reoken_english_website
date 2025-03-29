@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Institute | Contact Us</title>
+    <meta name="description" content="Get in touch with IRFF Genome Institute. Use our contact form to send us a message or find our contact information and location.">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+XH3iwxYV5lB6XxJY2OvM0nG5Xh9D+J5m6cUO8zjNk9PvsxOvfN54P9B8hK9e+xkHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header-banner">
+        IRFF Center for Genomic & Neural Innovation
+    </div>    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Institute Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="collaborations.html">Collaborations</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="healthproduct.html">Health Product</a></li> <!-- New Menu Item -->
+                    <li><a href="innovation.html">Innovation</a></li> <!-- New Menu Item -->
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger Menu for Mobile -->
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="section-spacing"></div> <!-- Spacer -->
+
+            <!-- Contact Form Subsection -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name" required aria-required="true" placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="user_email" required aria-required="true" placeholder="your.email@example.com">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required aria-required="true" placeholder="Subject">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required aria-required="true" placeholder="Your message here..."></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="section-spacing-large"></div> <!-- Spacer -->
+
+            <!-- Contact Details Subsection -->
+            <div class="contact-details">
+                <h2>Our Contact Information</h2>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 2241-1 Kubara, Hisayama-machi, Kasuya-gun, Fukuoka 811-2501, Japan</p>
+                <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +81 92 976 2800</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:shamim@rheology.po-jp.com">rheology@jade.dti.ne.jp</a></p>
+            </div>
+
+            <div class="section-spacing-medium"></div> <!-- Spacer -->
+
+            <!-- Google Map Subsection -->
+            <div class="map">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d868.8538729535379!2d130.5053604347255!3d33.63829972845123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354185ce400564ad%3A0x483b8537b85435dc!2z77yI5qCq77yJ44Os44Kq44Ot44K444O85qmf6IO96aOf5ZOB56CU56m25omA!5e0!3m2!1sen!2sjp!4v1734194449415!5m2!1sen!2sjp"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <div class="section-spacing-large"></div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="newsletter">
+                <form id="newsletter-form">
+                    <input type="email" name="email" placeholder="Subscribe to our newsletter" required aria-label="Email Address">
+                    <button type="submit" aria-label="Subscribe">Subscribe</button>
+                </form>
+            </div>
+            <p>&copy; IRFF Center for Genomic & Neural Innovation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Structure (for News & Events) -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="close-button" aria-label="Close Modal">&times;</button>
+            <h2 id="modal-title">Modal Title</h2>
+            <p id="modal-body">Modal content goes here.</p>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YOUR_USER_ID"); // Replace "YOUR_USER_ID" with your actual EmailJS user ID
+        })();
+    </script>
+
+    <!-- Link to JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

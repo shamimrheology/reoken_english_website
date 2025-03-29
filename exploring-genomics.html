@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring New Tools for Genomics | IRFF Genome Institute</title>
+    <meta name="description" content="Discover our innovative tools and methodologies developed for advanced genomics research, including RNASeq and mutation analysis.">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts and Font Awesome as in research.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+XH3iwxYV5lB6XxJY2OvM0nG5Xh9D+J5m6cUO8zjNk9PvsxOvfN54P9B8hK9e+xkHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header-banner">
+        IRFF Center for Genomic & Neural Innovation
+    </div>    
+    <!-- Header Section (Same as research.html) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Institute Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="collaborations.html">Collaborations</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="healthproduct.html">Health Product</a></li> <!-- New Menu Item -->
+                    <li><a href="innovation.html">Innovation</a></li> <!-- New Menu Item -->
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger Menu for Mobile -->
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Research Topic Section -->
+    <section class="research-topic">
+        <div class="container">
+            <h1>Exploring New Tools for Genomics</h1>
+            <div class="section-spacing"></div>
+            <p>Our Genomics division is dedicated to developing cutting-edge tools and methodologies to advance genomic research, including RNA sequencing and mutation analysis.</p>
+            
+            <!-- Placeholder for Detailed Content -->
+            <div class="content-placeholder">
+                <p>Development of a Comprehensive Genome Analysis Software for Advanced Bioinformatics
+                    <br><b>Overview</b>
+                    
+                    In our pursuit to advance the field of bioinformatics, we have developed a robust and user-friendly software application tailored for genome analysis. This software integrates powerful statistical tools, interactive visualization, and streamlined workflows to facilitate comprehensive differential gene expression and pathway enrichment analyses. By leveraging cutting-edge technologies such as Python, PyQt5 for graphical user interfaces, and R's DESeq2 package through rpy2, our solution bridges the gap between complex computational methodologies and accessible user experiences for researchers and scientists.
+                    
+                    <br><b>Key Features</b>
+                    
+                    <br><b>User-Friendly Graphical Interface for Genome Analysis</b>
+                    
+                    PyQt5 Integration: Utilizes PyQt5 to create an intuitive and responsive GUI, allowing users to interact seamlessly with the software without deep programming expertise.
+                    Data Management: Provides straightforward options to load, view, and manage CSV data files, ensuring that users can easily import their gene expression datasets.
+                    Differential Gene Expression Analysis
+                    
+                    DESeq2 Integration: Implements the DESeq2 package from Bioconductor through rpy2, enabling robust differential expression analysis between control and treatment groups.
+                    Flexible Group Selection: Allows users to dynamically select control and treatment groups from their datasets, accommodating various experimental designs.
+                    Species Support: Supports multiple species (e.g., Human and Mouse) by integrating appropriate annotation databases (org.Hs.eg.db and org.Mm.eg.db), ensuring accurate gene symbol mapping and functional annotation.
+                    Pathway Enrichment Analysis
+                    
+                    GSEApy Integration: Incorporates GSEApy to perform pathway enrichment analyses on upregulated and downregulated gene sets, leveraging Reactome pathways for comprehensive functional insights.
+                    Direction-Specific Analysis: Differentiates between upregulated and downregulated genes, providing direction-specific enrichment results that are crucial for understanding biological implications.
+                    Interactive Data Visualization
+                    
+                    Network Visualization with PyVis: Generates interactive network graphs that depict the relationships between genes and enriched pathways. This visualization aids in the intuitive understanding of complex biological interactions.
+                    Embedded Web Views: Utilizes QWebEngineView to seamlessly integrate HTML-based visualizations within the application, offering dynamic and interactive exploration of network data.
+                    Result Management and Export
+                    
+                    Table View Display: Displays analysis results in a structured table format within the application, allowing users to browse and inspect their data efficiently.
+                    Export Functionality: Provides options to save analysis results and pathway enrichment data as CSV files, facilitating further downstream analyses and record-keeping.
+                    Robust Error Handling and User Feedback
+                    
+                    Comprehensive Error Messages: Implements detailed error handling mechanisms to capture and inform users of issues during data loading, analysis execution, or result processing.
+                    User Notifications: Employs message boxes to communicate the status of operations, ensuring users are informed of successful analyses or required corrective actions.
+                    Technical Implementation
+                    
+                    <br><b>Programming Languages and Libraries:</b>
+                    
+                    <b>Python:</b> Serves as the primary programming language, chosen for its versatility and extensive ecosystem in scientific computing.
+                    PyQt5: Facilitates the creation of a sophisticated GUI, enhancing user interaction and accessibility.
+                    rpy2: Bridges Python with R, enabling the seamless execution of DESeq2 and other Bioconductor packages within the Python environment.
+                    Pandas: Utilized for efficient data manipulation and handling of gene expression datasets.
+                    GSEApy and PyVis: Provide advanced capabilities for pathway enrichment analysis and network visualization, respectively.
+                    Workflow Integration:
+                    
+                    <b>Data Import:</b> Users load their gene expression data in CSV format through the GUI.
+                    Group Configuration: Users select control and treatment groups, specifying experimental conditions.
+                    Differential Analysis: The software executes DESeq2 analysis, identifying differentially expressed genes between the selected groups.
+                    Annotation and Enrichment: Results are annotated with gene symbols and subjected to pathway enrichment analysis to uncover biological pathways involved.
+                    Visualization and Export: Interactive network graphs are generated, and comprehensive results are made available for review and export.
+                    
+                    <br><b>Impact and Future Directions</b>
+                    
+                    Our software addresses the critical need for integrated, user-friendly tools in genome analysis, empowering researchers to conduct complex analyses with ease and precision. By combining statistical rigor with accessible interfaces and visualization capabilities, we aim to accelerate discoveries in genomics and related fields. Future enhancements may include support for additional species, integration with other bioinformatics databases, and the incorporation of machine learning techniques for predictive analytics.
+                    
+                    <br><b>Conclusion</b>
+                    
+                    The development of this genome analysis software represents a significant step towards democratizing advanced bioinformatics tools. By harmonizing the strengths of Python and R within a cohesive application, we provide a platform that is both powerful and approachable, enabling researchers to unlock deeper insights into genomic data with efficiency and confidence.</p>
+            </div>
+
+            <!-- Optional Gallery or Media -->
+            <div class="gallery">
+                <p><b>Mutation Analysis in Genome of Aged Brain (Old Mice) </b></p>
+                <a href="images/mutation1.png" data-lightbox="exploring-genomics" data-title="Genomics Tool 1">
+                    <img src="images/exploring-genomics1_large.png" alt="Genomics Tool 1">
+                </a>
+                <div style="height: 30px;"></div>
+                <a href="images/mutation2_large.png" data-lightbox="exploring-genomics" data-title="Genomics Tool 1">
+                    <img src="images/mutation2.png" alt="Genomics Tool 1">
+                </a>
+                <div style="height: 30px;"></div>
+                <p>Plotting of Mutations in Whole Genome </p>
+                <a href="images/mutation3_large.png" data-lightbox="exploring-genomics" data-title="Genomics Tool 1">
+                    <img src="images/mutation3.png" alt="Genomics Tool 1">
+                </a>
+                
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+    <div class="section-spacing-large"></div>
+
+    <!-- Footer Section (Same as research.html) -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="newsletter">
+                <form id="newsletter-form">
+                    <input type="email" name="email" placeholder="Subscribe to our newsletter" required aria-label="Email Address">
+                    <button type="submit" aria-label="Subscribe">Subscribe</button>
+                </form>
+            </div>
+            <p>&copy; IRFF Center for Genomic & Neural Innovation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Structure (Same as research.html) -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="close-button" aria-label="Close Modal">&times;</button>
+            <h2 id="modal-title">Modal Title</h2>
+            <p id="modal-body">Modal content goes here.</p>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
