@@ -251,7 +251,7 @@ nav {
 ==================================================== */
 .introduction {
     padding: 60px 0;
-    text-align: center;
+    text-align: justify;
     background-color: #f9f9f9;
 }
 
@@ -262,8 +262,9 @@ nav {
 
 .introduction p {
     font-size: 18px;
-    max-width: 800px;
-    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
 }
 
 /* ====================================================
